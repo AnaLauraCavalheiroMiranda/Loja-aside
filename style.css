@@ -1,0 +1,56 @@
+body{
+    display: grid;
+    grid-template-areas:
+        "cabeca cabeca"
+        "branco corpo"
+        "peh peh";
+    grid-template-rows: 100px 500px 100px;
+    grid-template-columns: 400px auto;         
+}
+
+header{
+    background-color: aqua;
+    grid-area: cabeca;
+}
+aside{
+    background-color: blueviolet;
+    grid-area: branco;
+}
+main{
+    background-color: violet;
+    grid-area: corpo;
+}
+footer{
+    background-color: tomato;
+    grid-area: peh;
+}
+@media only screen and (max-width: 850px){
+    body{
+        display: grid;
+        grid-template-areas: 
+        "cabeca"
+        "branco"
+        "corpo"
+        "peh";
+        grid-template-rows: 100px 50px 500px 100px;
+        grid-template-columns: auto;
+    }
+}
+.letra{
+    color: brown;
+    background-color: rgb(255, 0, 119);
+}
+@media only screen and (max-width:450px){
+    body{
+        display: grid;
+        grid-template-areas:
+        "cabeca"
+        "corpo"
+        "peh";
+        grid-template-rows: 100px 500px 100px;
+        grid-column: auto;
+    }
+    aside{
+        display: none;
+    }
+}
