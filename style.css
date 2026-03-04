@@ -9,19 +9,19 @@ body{
 }
 
 header{
-    background-color: aqua;
+    background-color: #C6C954;
     grid-area: cabeca;
 }
 aside{
-    background-color: blueviolet;
+    background-color: #434424;
     grid-area: branco;
 }
 main{
-    background-color: violet;
+    background-color: #FFEC8E;
     grid-area: corpo;
 }
 footer{
-    background-color: tomato;
+    background-color: #949741;
     grid-area: peh;
 }
 @media only screen and (max-width: 850px){
@@ -37,8 +37,7 @@ footer{
     }
 }
 .letra{
-    color: brown;
-    background-color: rgb(255, 0, 119);
+    color: rgb(255, 0, 0);
 }
 @media only screen and (max-width:450px){
     body{
@@ -53,4 +52,23 @@ footer{
     aside{
         display: none;
     }
+}
+
+.gato_produto{
+     width: 200px;
+    height: 200px;
+}
+
+.card{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   padding: 50px;
+   border: black 2px solid;
+   background-color: #fff8d4;
+   width: 200px;
+   height: 350px;
+   border-radius: 10px;
+   text-align: center;
+   margin: 10px;
 }
