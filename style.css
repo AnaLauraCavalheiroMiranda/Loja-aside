@@ -4,7 +4,7 @@ body{
         "cabeca cabeca"
         "branco corpo"
         "peh peh";
-    grid-template-rows: 100px 500px 100px;
+    grid-template-rows: 100px auto 100px;
     grid-template-columns: 400px auto;         
 }
 
@@ -32,7 +32,7 @@ footer{
         "branco"
         "corpo"
         "peh";
-        grid-template-rows: 100px 50px 500px 100px;
+        grid-template-rows: 100px 50px auto 100px;
         grid-template-columns: auto;
     }
 }
@@ -46,14 +46,18 @@ footer{
         "cabeca"
         "corpo"
         "peh";
-        grid-template-rows: 100px 500px 100px;
+        grid-template-rows: 100px auto 100px;
         grid-column: auto;
     }
     aside{
         display: none;
     }
 }
-
+.pai{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .gato_produto{
      width: 200px;
     height: 200px;
