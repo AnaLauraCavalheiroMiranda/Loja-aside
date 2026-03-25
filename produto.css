@@ -1,0 +1,61 @@
+body {
+    display: grid;
+    grid-template-areas:
+        "cabeca"
+        "corpo"
+        "peh";
+    /* Removida a coluna de 400px, deixamos apenas uma coluna automática */
+    grid-template-columns: 1fr; 
+    grid-template-rows: 100px auto 100px; 
+    min-height: 100vh; /* Garante que o corpo ocupe a tela toda */
+}
+
+header {
+    background-color: #6C5234;
+    grid-area: cabeca;
+}
+/* O aside pode ser removido do CSS ou deixado com display: none */
+aside {
+    display: none;
+}
+main {
+    background-color: #E5D7C4;
+    grid-area: corpo;
+}
+footer {
+    background-color: #6C5234;
+    grid-area: peh;
+}
+@media only screen and (max-width: 850px) {
+    body {
+        /* Aqui você não precisa mudar quase nada, pois já é uma coluna só */
+        grid-template-rows: 80px auto 80px; 
+    }
+}
+.pai{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.gato_produto{
+     width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    border: black 1px solid;
+}
+
+.card{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   padding: 50px;
+   border: black 2px solid;
+   background-color: #868a73;
+   width: 400px;
+   height: 600px;
+   border-radius: 10px;
+   text-align: center;
+   margin: 10px;
+}
