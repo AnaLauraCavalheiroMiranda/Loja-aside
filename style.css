@@ -1,3 +1,4 @@
+
 body{
     display: grid;
     grid-template-areas:
@@ -84,13 +85,12 @@ footer{
     background-color: #4b553b; 
     border-radius: 5px;
     text-align: center;
-  }
-  
-.letra_botao {
-    color: white;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: black;
     font-weight: bold;
+    cursor: pointer;
   }
-  
   .botao:hover {
     background-color: #354024 
   }
