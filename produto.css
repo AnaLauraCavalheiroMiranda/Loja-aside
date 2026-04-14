@@ -40,8 +40,8 @@ footer {
     width: 100%;
 }
 .gato_produto{
-     width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     border-radius: 10px;
     border: black 1px solid;
 }
@@ -57,5 +57,27 @@ footer {
    height: 600px;
    border-radius: 10px;
    text-align: center;
+   align-items: center;
    margin: 10px;
+}
+.botao {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4b553b; 
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+.letra_botao {
+    color: white;
+    font-weight: bold;
+  }
+  
+  .botao:hover {
+    background-color: #354024 
+  }
+.linkp{
+    text-decoration: none;
+    color: inherit;
+    display: contents;
 }
