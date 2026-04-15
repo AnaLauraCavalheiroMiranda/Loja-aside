@@ -13,6 +13,19 @@ header{
     background-color: #6C5234;
     grid-area: cabeca;
 }
+header .botao {
+    background-color: #E5D7C4;
+    color: #4E351E;           
+    border: 1px solid #4E351E;
+    transition: all 0.3s ease;
+    font-size: 14.4px;
+    text-transform: uppercase;
+}
+header .botao:hover {
+    background-color: #4E351E;
+    color: #E5D7C4;
+    transform: translateY(-2px);
+}
 aside{
     background-color: #4E351E;
     grid-area: branco;
@@ -92,7 +105,8 @@ footer{
     cursor: pointer;
   }
   .botao:hover {
-    background-color: #354024 
+    background-color: #354024;
+    transform: translateY(-2px);
   }
 .linkp{
     text-decoration: none;
